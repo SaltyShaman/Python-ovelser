@@ -1,4 +1,8 @@
-ef get_number(prompt):
+# main.py
+
+from calculator import calculator
+
+def get_number(prompt):
     while True:
         try:
             return float(input(prompt))
