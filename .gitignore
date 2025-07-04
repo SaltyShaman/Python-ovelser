@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+
+# Ignore all JAR files
+*.jar
+
+# Ignore Gradle build folders
+.gradle/
+build/
+
+# Ignore VS Code settings
+.vscode/
