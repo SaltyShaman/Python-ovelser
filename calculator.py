@@ -8,13 +8,14 @@ def calculator(a, operator, b):
     if operator not in ['+', '-', '*', '/']:
         raise ValueError("Operator skal være en af '+', '-', '*', '/'")
 
-    if operator == '+':
-        return a + b
-    elif operator == '-':
-        return a - b
-    elif operator == '*':
-        return a * b
-    elif operator == '/':
-        if b == 0:
-            raise ZeroDivisionError("Division med nul er ikke tilladt")
-        return a / b
+    match operator:
+        case '+':
+            return a + b
+        case '-':
+            return a - b
+        case '*':
+            return a * b
+        case '/':
+            if b == 0:
+                raise ZeroDivisionError("Division med nul er ikke tilladt")
+            return a / b
